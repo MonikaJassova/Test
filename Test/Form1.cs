@@ -15,6 +15,9 @@ namespace Test
         public Form1()
         {
             InitializeComponent();
+            comboBox1.Items.Add("zbernicova");
+            comboBox1.Items.Add("mesh");
+            comboBox1.Items.Add("hviezdicova");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,8 +74,8 @@ namespace Test
             else
                 label6.ForeColor = Color.Red;
 
-            //if (comboBox1.SelectedText.ToString().Equals("hviezdicova"))
-            if (listBox1.Text == "hviezdicova")
+            if (comboBox1.Text.ToString().Equals("hviezdicova"))
+            //if (listBox1.Text == "hviezdicova")
             {
                 pocet++;
                 label5.ForeColor = Color.Green;
